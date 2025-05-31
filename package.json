@@ -1,0 +1,23 @@
+{
+  "name": "javascript_practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
+    "method-override": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "nodemon": "^3.1.10"
+  }
+}

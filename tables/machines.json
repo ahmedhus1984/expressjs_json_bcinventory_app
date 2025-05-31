@@ -1,0 +1,41 @@
+[
+  {
+    "brand": "lenovo",
+    "model": "T14 Gen 4",
+    "serial": "PF4VD0QK",
+    "hostname": "SGSIN1BL8088",
+    "type": "laptop",
+    "shipdate": "2023-12-17",
+    "warrexp": "2027-01-30",
+    "department": "teaching",
+    "site": null,
+    "location": null,
+    "status": "deployed"
+  },
+  {
+    "brand": "Dell",
+    "model": "Latitude 7290",
+    "serial": "10BC6Y2",
+    "hostname": "SGSIN1BL5053",
+    "type": "laptop",
+    "shipdate": "2019-07-18",
+    "warrexp": "2022-Jul-19",
+    "department": "regional",
+    "site": "napier",
+    "location": "l4-sr-c3",
+    "status": "deployed"
+  },
+  {
+    "brand": "lenovo",
+    "model": "p14s gen 2",
+    "serial": "pf3gc23c",
+    "hostname": "sgsin1bl8060",
+    "type": "laptop",
+    "shipdate": "2022-06-30",
+    "warrexp": "2025-06-29",
+    "department": "exams",
+    "site": "napier",
+    "location": null,
+    "status": "pending_deployment"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "email": "ali@mlsi.com.sg",
+    "department": "regional",
+    "title": "Regional Events Manager",
+    "date_joined": "2024-02-29"
+  },
+  {
+    "email": "john@mlsi.com.sg",
+    "department": "teaching",
+    "title": "teacher",
+    "date_joined": "2023-08-12"
+  },
+  {
+    "email": "cristiano.ronaldo@mlsi.com.sg",
+    "department": "premises",
+    "title": "it admin",
+    "date_joined": "2025-06-05"
+  },
+  {
+    "email": "messi@mlsi.com.sg",
+    "department": "premises",
+    "title": "ui/ux admin",
+    "date_joined": "2025-06-02"
+  }
+]

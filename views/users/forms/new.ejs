@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%=message%></title>
+</head>
+<body>
+  <h2><%=message%></h2>
+  <form action="/users" method="POST">
+    <label>Email:<br>
+      <input type="email" name="email" value="<%= emailInput || '' %>" required />
+    </label>
+    <br><br>
+
+    <label>Department:<br>
+      <input type="text" name="department" value="<%= departmentInput || '' %>" required />
+    </label>
+    <br><br>
+
+    <label>Title:<br>
+      <input type="text" name="title" value="<%= titleInput || '' %>" required />
+    </label>
+    <br><br>
+
+    <label>Date Joined:<br>
+      <input type="date" name="date_joined" value="<%= dateJoinedInput || '' %>" required />
+    </label>
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

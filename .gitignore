@@ -1,0 +1,21 @@
+# Dependency directories
+node_modules/
+
+# IDE/editor folders
+.vs/
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+
+# OS-specific files
+.DS_Store
+
+# Optional: ignore build output
+dist/
+build/

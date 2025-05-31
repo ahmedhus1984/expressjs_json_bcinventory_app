@@ -1,0 +1,17 @@
+<h2>Users</h2>
+<%= message %>
+<% if (Array.isArray(allUsers) && allUsers.length > 0) { %>
+  <ul>
+    <% allUsers.forEach(function(user) { %>
+      <li>
+        <strong>Email:</strong> <%= user.email %><br>
+        <strong>Department:</strong> <%= user.department %><br>
+        <strong>Title:</strong> <%= user.title %><br>
+        <strong>Date Joined:</strong> <%= user.date_joined %>
+      </li>
+      <hr>
+    <% }) %>
+  </ul>
+<% } else { %>
+  <p>No users found.</p>
+<% } %>

@@ -1,0 +1,28 @@
+[
+  {
+    "brand": "dell",
+    "model": "latitude 7280",
+    "serial": "75zb0n2",
+    "hostname": "sgsin1bl5001",
+    "type": "laptop",
+    "shipdate": "2018-03-05",
+    "warrexp": "2021-03-05",
+    "site": "napier",
+    "department": "teaching",
+    "location": "l4-sr-c4",
+    "remarks": null
+  },
+  {
+    "brand": "lenovo",
+    "model": "t490",
+    "serial": "pf1b5a6j",
+    "hostname": "sgsin1bl7174",
+    "type": "laptop",
+    "shipdate": "2020-06-12",
+    "warrexp": "2023-06-12",
+    "site": "napier",
+    "department": "teaching",
+    "location": "l4-sr-c4",
+    "remarks": "unable to power up after being exposed to rain by user kirstie.marshall@britishcouncil.org"
+  }
+]
