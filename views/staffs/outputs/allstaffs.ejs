@@ -1,0 +1,18 @@
+<h2>Current Staffs</h2>
+<%= message %>
+
+<% if (Array.isArray(allStaffs) && allStaffs.length > 0) { %>
+  <ul>
+    <% allStaffs.forEach(function(staff) { %>
+      <li>
+        <strong>Email:</strong> <%= staff.email %><br>
+        <strong>Department:</strong> <%= staff.department %><br>
+        <strong>Title:</strong> <%= staff.title %><br>
+        <strong>Date Joined:</strong> <%= staff.date_joined %>
+      </li>
+      <hr>
+    <% }) %>
+  </ul>
+<% } else { %>
+  <p>No staffs found.</p>
+<% } %>

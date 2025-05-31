@@ -1,6 +1,6 @@
 import express from 'express';
 import expressLayout from 'express-ejs-layouts';
-import usersRouter from './routes/users.js'; //import the router module in /routes/users.js
+import staffsRouter from './routes/staffs.js'; //import the router module in /routes/staffs.js
 import methodOverride from 'method-override';
 
 const app=express();
@@ -19,7 +19,7 @@ app.use(methodOverride((req, res) => {
   }
 }));
 
-app.use('/users', usersRouter)  // Mount it on the /users path
+app.use('/staffs', staffsRouter)  // Mount it on the /staffs path
 
 app.get('/', (req, res) => {
   res.render('index', {layout:'partials/indexbase'});

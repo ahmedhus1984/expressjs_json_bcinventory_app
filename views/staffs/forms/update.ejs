@@ -1,3 +1,6 @@
+<h2>Update Staff</h2>
+<%= message %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +12,7 @@
 <body>
 <form action="/users/update2" method="POST">
     <input type="hidden" name="_method" value="PUT">
-    <label>Current Email:<br>
+    <label>Enter Current Email of Staff to Update:<br>
       <input type="text" name="currentEmail" value="<%= currentEmailInput %>" />
     </label>
     <br><br>
