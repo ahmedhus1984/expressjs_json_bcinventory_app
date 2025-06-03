@@ -18,9 +18,21 @@
     "date_joined": "2025-06-05"
   },
   {
+    "email": "bastos@mlsi.com.sg",
+    "department": "regional",
+    "title": "facilities coordinator",
+    "date_joined": "2025-06-03"
+  },
+  {
     "email": "messi@mlsi.com.sg",
+    "department": "regional",
+    "title": "dsfsdf",
+    "date_joined": "2025-06-20"
+  },
+  {
+    "email": "maradona@mlsi.com.sg",
     "department": "premises",
-    "title": "ui/ux admin",
-    "date_joined": "2025-06-02"
+    "title": "midfield maestro",
+    "date_joined": "2025-06-19"
   }
 ]

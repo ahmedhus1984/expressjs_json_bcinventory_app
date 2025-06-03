@@ -1,0 +1,57 @@
+<h2>Validate Staff Before Update</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/staffs/update2" method="GET">
+    <label>Enter Current Email of Staff to Validate User before Update:<br><br>
+      <input type="text" name="email" value="<%=emailInput %>" />
+    </label>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form><% if (staff) { %>
+  <div>
+    <h2>Staff Exists in Database, Please Modify:</h2>
+      <form action="/staffs/update2" method="POST">
+        
+          <!-- Hidden original values -->
+          <input type="hidden" name="original_email" value="<%= emailInput || '' %>" />
+          <input type="hidden" name="original_department" value="<%= departmentInput || '' %>" />
+          <input type="hidden" name="original_title" value="<%= titleInput || '' %>" />
+          <input type="hidden" name="original_date_joined" value="<%= dateJoinedInput || '' %>" />
+          
+          <label>Email:<br>
+            <input type="email" name="email" value="<%= emailInput || '' %>" required />
+          </label>
+          <br><br>
+
+          <label>Department:<br>
+            <input type="text" name="department" value="<%= departmentInput || '' %>" required />
+          </label>
+          <br><br>
+
+          <label>Title:<br>
+            <input type="text" name="title" value="<%= titleInput || '' %>" required />
+          </label>
+          <br><br>
+
+          <label>Date Joined:<br>
+            <input type="date" name="date_joined" value="<%= dateJoinedInput || '' %>" required />
+          </label>
+          <br><br>
+          <button type="submit">Submit</button>
+        </form>
+  </div>
+<% } else { %>
+  <p><%= message %></p>
+<% } %>
+  <br><br>
+    <a href="/staffs">Back to Staffs</a>
+</body>
+</html>

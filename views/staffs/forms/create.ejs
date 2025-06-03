@@ -1,5 +1,4 @@
-<h2>Add Staff</h2>
-<%= message %>
+<h2>Add a Staff</h2>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +9,7 @@
   <title><%=message%></title>
 </head>
 <body>
-  <form action="/staffs" method="POST">
+  <form action="/staffs/create2" method="POST">
     <label>Email:<br>
       <input type="email" name="email" value="<%= emailInput || '' %>" required />
     </label>
@@ -33,5 +32,22 @@
 
     <button type="submit">Submit</button>
   </form>
+  <% if (staff) { %>
+    <div>
+      <h2>Staff Added to Database:</h2>
+      <ul>
+        <li>
+          <strong>Email:</strong> <%= staff.email %><br />
+          <strong>Department:</strong> <%= staff.department %><br />
+          <strong>Title:</strong> <%= staff.title %><br />
+          <strong>Date Joined:</strong> <%= staff.date_joined %>
+        </li>
+      </ul>
+    </div>
+  <% } else { %>
+    <p><%= message %></p>
+  <% } %>
+    <br><br>
+    <a href="/staffs">Back to Staffs</a>
 </body>
 </html>

@@ -1,0 +1,26 @@
+<h2>Changes Made</h2>
+<%= message %>
+
+<h4>Previous Record:</h4>
+<% if (oldStaff && newStaff) { %>
+  <ul>
+    <li>
+      <strong>Email:</strong> <%= oldStaff.email %><br>
+      <strong>Department:</strong> <%= oldStaff.department %><br>
+      <strong>Title:</strong> <%= oldStaff.title %><br>
+      <strong>Date Joined:</strong> <%= oldStaff.date_joined %>
+    </li>
+  </ul>
+<% } %>
+
+<h4>Updated Record:</h4>
+<% if (oldStaff && newStaff) { %>
+  <ul>
+    <li>
+      <strong>Email:</strong> <%= newStaff.email %><br>
+      <strong>Department:</strong> <%= newStaff.department %><br>
+      <strong>Title:</strong> <%= newStaff.title %><br>
+      <strong>Date Joined:</strong> <%= newStaff.date_joined %>
+    </li>
+  </ul>
+<% } %>

@@ -1,20 +1,47 @@
-<h2>View Staff</h2>
-<%= message %>
-
+<h2><%=viewstaffheader%></h2>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Staff</title>
 </head>
 <body>
-  <form action="/staffs/read2" method="GET">
-    <label>Email: 
-      <input type="text" name="email" value="<%=emailInput %>" />
-    </label>
-    <button type="submit">Submit</button>
+<form action="/staffs/read2" method="GET" style="<%= hideForm ? 'display: none;' : 'display: block;' %>">
+      <label>Email: 
+        <input type="text" name="email" value="<%= emailInput || '' %>" />
+      </label>
+      <button type="submit">Submit</button>
   </form>
+  <div>
+  <% if (Array.isArray(staffs)) { %>
+    <ul>
+      <% staffs.forEach(function(staff) { %>
+        <li>
+          <strong>Email:</strong> <%= staff.email %><br>
+          <strong>Department:</strong> <%= staff.department %><br>
+          <strong>Title:</strong> <%= staff.title %><br>
+          <strong>Date Joined:</strong> <%= staff.date_joined %>
+        </li>
+        <hr>
+      <% }) %>
+    </ul>
+  <% } else if (staffs) { %>
+      <h2>Staff</h2>
+      <ul>
+        <li>
+          <strong>Email:</strong> <%= staffs.email %><br />
+          <strong>Department:</strong> <%= staffs.department %><br />
+          <strong>Title:</strong> <%= staffs.title %><br />
+          <strong>Date Joined:</strong> <%= staffs.date_joined %>
+        </li>
+      </ul>
+  <% } else { %>
+    <p><%= message %></p>
+  <% } %>
+  </div>
+  <br><br>
+    <a href="/staffs">Back to Staffs</a>
 </body>
 </html>

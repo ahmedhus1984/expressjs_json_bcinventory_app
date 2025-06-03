@@ -12,7 +12,12 @@
 </head>
 <body class="a">
     <%-body%>
+    <% if (typeof searchResult !== 'undefined') { %>
+      <div id="search-result">
+        <p><%= searchResult %></p>
+      </div>
+    <% } %>
     <br><br>
-    <a href="/">Back to Home</a>
+    <a href="/">Back to Home Page</a>
 </body>
 </html>
