@@ -1,5 +1,3 @@
-<h2>Add a Staff</h2>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +7,9 @@
   <title><%=message%></title>
 </head>
 <body>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/staffs">Back to Staffs</a>
+  <h2>Add a Staff</h2>
   <form action="/staffs/create2" method="POST">
     <label>Email:<br>
       <input type="email" name="email" value="<%= emailInput || '' %>" required />
@@ -47,7 +48,5 @@
   <% } else { %>
     <p><%= message %></p>
   <% } %>
-    <br><br>
-    <a href="/staffs">Back to Staffs</a>
 </body>
 </html>

@@ -11,13 +11,6 @@ app.set('layout', 'partials/base');
 app.use(expressLayout);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use(methodOverride((req, res) => {
-//   if (req.body && typeof req.body === 'object' && '_method' in req.body) {
-//     const method = req.body._method;
-//     delete req.body._method;  // Remove _method from body after using it
-//     return method;
-//   }
-// }));
 
 app.use('/staffs', staffsRouter)  // Mount it on the /staffs path
 

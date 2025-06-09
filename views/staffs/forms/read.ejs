@@ -1,4 +1,3 @@
-<h2><%=viewstaffheader%></h2>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +7,13 @@
   <title>View Staff</title>
 </head>
 <body>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/staffs">Back to Staffs</a>
+<h2><%=viewstaffheader%></h2>
 <form action="/staffs/read2" method="GET" style="<%= hideForm ? 'display: none;' : 'display: block;' %>">
-      <label>Email: 
+      <label>Email:<br>
         <input type="text" name="email" value="<%= emailInput || '' %>" />
-      </label>
+      </label><br><br>
       <button type="submit">Submit</button>
   </form>
   <div>
@@ -41,7 +43,5 @@
     <p><%= message %></p>
   <% } %>
   </div>
-  <br><br>
-    <a href="/staffs">Back to Staffs</a>
 </body>
 </html>

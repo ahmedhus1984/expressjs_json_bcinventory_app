@@ -1,5 +1,3 @@
-<h2>Delete a Staff</h2>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +7,13 @@
   <title>Document</title>
 </head>
 <body>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/staffs">Back to Staffs</a>
+  <h2>Delete a Staff</h2>
 <form action="/staffs/delete2" method="POST">
   <label>Email of Staff to Delete:<br>
     <input type="text" name="email" value="<%= emailInput %>" />
-  </label>
+  </label><br><br>
   <button type="submit">Submit</button>
 </form>
 <% if (staff) { %>
@@ -30,7 +31,5 @@
 <% } else { %>
   <p><%= message %></p>
 <% } %>
-  <br><br>
-    <a href="/staffs">Back to Staffs</a>
 </body>
 </html>
